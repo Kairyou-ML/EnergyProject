@@ -7,7 +7,7 @@ EnergyProject/
 
 ├── notebooks/          # Jupyter/Colab notebooks
 
-├── src/                # Mã nguồn (models, preprocessing, etc.)
+├── src/ preprocess               # Mã nguồn (models, preprocessing, etc.)
 
 ├── webapp/             # Mã nguồn web (Streamlit/Flask)
 
