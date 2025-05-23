@@ -30,6 +30,7 @@ columns = [
     "Cost_Savings_USD",
 ]
 
+# Sample input
 sample = pd.DataFrame(
     [
         {
