@@ -8,7 +8,7 @@ from nbconvert import HTMLExporter
 from functools import lru_cache
 
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_DIR = '/app/Model' if os.path.exists('/app/Model') else os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'Model')
 
 app = Flask(__name__)
 
@@ -51,8 +51,8 @@ income_levels = {
 
 
 def load_model():
-    
-    model_path = os.path.join(BASE_DIR, 'Model', 'K_Prototypes.pkl')
+    model_path = os.path.join(MODEL_DIR, 'K_Prototypes.pkl')
+
     with open(model_path, 'rb') as f:
         return pickle.load(f)
 
@@ -79,7 +79,7 @@ def notebook_view():
 @lru_cache(maxsize=1)
 def get_notebook_html():
     """model html - cached """
-    notebook_path = os.path.join(BASE_DIR, 'Model', 'model.ipynb')
+    notebook_path = os.path.join(MODEL_DIR, 'model.ipynb')
     
     # Read notebook
     with open(notebook_path, 'r', encoding='utf-8') as f:
@@ -95,7 +95,7 @@ def get_notebook_html():
 @app.route('/download-model')
 def download_model():
     """Download the model """
-    model_path = os.path.join(BASE_DIR, 'Model', 'K_Prototypes.pkl')
+    model_path = os.path.join(MODEL_DIR, 'K_Prototypes.pkl')
     return send_file(model_path, 
                      mimetype='application/octet-stream',
                      download_name='energy_cluster_model.pkl',
@@ -160,5 +160,5 @@ def extract_form_data(form_data):
     return input_df, input_df.to_numpy()
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+    app.run(host='0.0.0.0', port=5000, debug=True) 
     
