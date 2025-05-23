@@ -1,18 +1,15 @@
 # EnergyProject
+
 Challenge project on household energy data for GDG USTH challenge
 
 EnergyProject/
 
-├── data/               # Dữ liệu gốc và đã xử lý
+├── Brainstorm Ideas & Implementation
 
-├── notebooks/          # Jupyter/Colab notebooks
+├── Data
 
-├── src/ preprocess               # Mã nguồn (models, preprocessing, etc.)
+├── Model
 
-├── webapp/             # Mã nguồn web (Streamlit/Flask)
+├── EDA & Preprocessing
 
-├── results/            # Kết quả, biểu đồ, hình ảnh
-
-├── requirements.txt    # Danh sách các gói Python cần thiết
-
-└── README.md           # Mô tả tổng quan dự án
+└── Deployment
