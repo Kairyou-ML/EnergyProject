@@ -1,0 +1,28 @@
+{% if request.path != url_for('notebook_view') %}
+</div> <!-- End of container -->
+{% endif %}
+</div> <!-- End of content div -->
+
+<footer class="footer py-4 bg-dark text-white shadow-lg" style="border-top: 4px solid #17a2b8;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <span>
+                    <i class="fas fa-bolt text-info"></i> <strong style="color: #20c997;">Energy User Group Analyzer</strong> 
+                </span>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <span>
+                    <a href="https://github.com/Kairyou-ML/EnergyProject" target="_blank" class="text-decoration-none" style="color: #ffc107; font-weight: bold;">
+                        <i class="fab fa-github"></i> GitHub Repository
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
