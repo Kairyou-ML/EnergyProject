@@ -1,20 +1,21 @@
 import pickle
 import numpy as np
 import pandas as pd
+from utils import encode_df
 
-categorical_indexes = [0, 1, 5, 6, 8]
+categorical_indexes = [0, 1]
 
 cluster_labels = {
-    0: "Heavy Users in Underserved Areas",
-    1: "High Impact Rural Households",
-    2: "Minimal Users with Strong Means",
-    3: "Urban Subsidized Adopters",
-    4: "Budget-Conscious Urban Beneficiaries",
-    5: "Efficient Urban Savers",
-    6: "High Consumers with Low Returns",
-    7: "Frugal Households with High Gains",
-    8: "Urban Energy Spenders",
-    9: "Wealthy Subsidized Consumers",
+    0: "Modest Solar Starters",
+    1: "High-Usage Biomass Households",
+    2: "Urban Wind-Funded Families",
+    3: "Resilient Rural Solar Pioneers",
+    4: "Underperforming Hydro Households",
+    5: "Independent Urban Wind Users",
+    6: "Subsidized Hydro Families",
+    7: "Rural Geothermal Pioneers",
+    8: "Urban Wind Maximizers",
+    9: "Strategic Biomass Users",
 }
 
 columns = [
@@ -46,14 +47,14 @@ sample = pd.DataFrame(
             "Subsidy_Received": "Yes",
         }
     ]
-)[
-    columns
-]  # ensure correct column order
+)[columns]
 
 with open("K_Prototypes.pkl", "rb") as f:
     model = pickle.load(f)
 
-cluster_id = model.predict(sample.to_numpy(), categorical=categorical_indexes)[0]
+cluster_id = model.predict(
+    encode_df(sample).to_numpy(), categorical=categorical_indexes
+)[0]
 
 user_label = cluster_labels[cluster_id]
 
