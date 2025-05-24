@@ -2,10 +2,10 @@
     <div class="col-md-10 mx-auto">
         <div class="card" style="background: transparent; border: none; box-shadow: none;">
             <div class="card-body">
-                <h4 class="mb-4 text-info text-center">Enter Your Household Energy Data</h4>
+                <h4 class="mb-4 text-info text-center" data-aos="fade-up">Enter Your Household Energy Data</h4>
                 <form id="analysis-form">
                     <!-- Country and Energy  -->
-                    <div class="row mb-4">
+                    <div class="row mb-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="col-md-6">
                             <label for="country" class="form-label"><i class="fas fa-globe text-info me-2"></i>Country</label>
                             <select class="form-select border-info" id="country" name="country" required>
@@ -28,7 +28,7 @@
                     </div>
                     
                     <!-- Household Data -->
-                    <div class="row mb-4">
+                    <div class="row mb-4" data-aos="fade-up" data-aos-delay="150">
                         <div class="col-md-6">
                             <label for="monthly_usage" class="form-label"><i class="fas fa-bolt text-info me-2"></i>Monthly Usage (kWh)</label>
                             <input type="number" step="1" class="form-control border-info" id="monthly_usage" name="monthly_usage" required value="950">
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     
-                    <div class="row mb-4">
+                    <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="col-md-6">
                             <label for="year" class="form-label"><i class="fas fa-calendar-alt text-info me-2"></i>Year</label>
                             <input type="number" class="form-control border-info" id="year" name="year" required value="2022">
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     
-                    <div class="row mb-4">
+                    <div class="row mb-4" data-aos="fade-up" data-aos-delay="250">
                         <div class="col-md-6">
                             <label for="household_size" class="form-label"><i class="fas fa-home text-info me-2"></i>Household Size</label>
                             <input type="number" step="0.1" class="form-control border-info" id="household_size" name="household_size" required value="4.6">
@@ -66,7 +66,7 @@
                     </div>
                     
                     <!-- add in4-->
-                    <div class="row mb-4">
+                    <div class="row mb-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="col-md-6">
                             <div class="form-check p-3 border-start border-info rounded" style="border-width: 4px !important; background-color: rgba(240, 247, 255, 0.5);">
                                 <input class="form-check-input" type="checkbox" id="urban" name="urban" value="true" checked>
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                     
-                    <div class="d-grid gap-2 mb-5">
+                    <div class="d-grid gap-2 mb-5" data-aos="fade-up" data-aos-delay="350">
                         <button type="submit" class="btn btn-info text-white" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                             <i class="fas fa-search me-2"></i>Analyze Your Profile
                         </button>
@@ -97,18 +97,18 @@
         </div>
         
         <!-- Result Card -->
-        <div class="card analysis-result-card" id="analysis-result-card" style="background: linear-gradient(to right, #fff9e6, #fff6d9, #fff3cc); border: none; box-shadow: 0 6px 12px rgba(0,0,0,0.1);">
+        <div class="card analysis-result-card" id="analysis-result-card" style="background: linear-gradient(to right, #fff9e6, #fff6d9, #fff3cc); border: none; box-shadow: 0 6px 12px rgba(0,0,0,0.1);" data-aos="zoom-in" data-aos-duration="1000">
             <div class="card-body p-4">
                 <h4 class="card-title text-warning mb-4 text-center"><i class="fas fa-lightbulb me-2"></i>Your Energy Profile</h4>
-                <div class="alert" style="background-color: white; border-left: 5px solid #ffc107; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+                <div class="alert" style="background-color: white; border-left: 5px solid #ffc107; box-shadow: 0 4px 8px rgba(0,0,0,0.05);" data-aos="fade-up" data-aos-delay="100">
                     <div class="row">
-                        <div class="col-md-3 text-center">
+                        <div class="col-md-3 text-center" data-aos="fade-right" data-aos-delay="200">
                             <div class="rounded-circle bg-warning d-inline-flex justify-content-center align-items-center mb-3" style="width: 80px; height: 80px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                                 <h2 class="text-white mb-0" id="cluster-id">0</h2>
                             </div>
                             <h6 class="mb-0">Cluster ID</h6>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-9" data-aos="fade-left" data-aos-delay="300">
                             <h3 class="mb-3 text-warning" id="user-label">Your User Group</h3>
                             <p class="mb-0" id="cluster-description">Your cluster description will appear here.</p>
                         </div>
