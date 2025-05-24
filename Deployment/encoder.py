@@ -1,10 +1,15 @@
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
 import pickle
+import os
 
 
 def encode_df(df: pd.DataFrame):
-    with open("../EDA & Preprocessing/scaler.pkl", "rb") as f:
+    
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    scaler_path = os.path.join(base_dir, "EDA & Preprocessing", "scaler.pkl")
+    
+    with open(scaler_path, "rb") as f:
         scaler = pickle.load(f)
 
     # Normalize numerical data
