@@ -1,7 +1,7 @@
 {% include 'partials/header.html' %}
 
 <div class="container mt-5">
-    <div class="row align-items-center">
+    <div class="row align-items-center" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-md-3 text-center mb-4 mb-md-0">
             <img src="{{ url_for('static', filename='images/energy-saving-icon-design-free-vector.jpg') }}" alt="Energy Groups Logo" class="img-fluid" style="max-width: 180px;">
         </div>
@@ -12,39 +12,39 @@
     </div>
 
     <div class="row mb-5 mt-5">
-        <div class="col-md-10 mx-auto">
+        <div class="col-md-10 mx-auto" data-aos="fade-up" data-aos-duration="1200">
             <div class="card shadow">
                 <div class="card-header bg-info text-white">
                     <h3 class="mb-0">About the Model</h3>
                 </div>
                 <div class="card-body p-4" style="background: linear-gradient(to right, #f0f7ff, #e8f4ff, #e0f1ff);">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
                             <h4 class="mb-4 text-info">Understanding Your Energy Profile</h4>
                             <p>Our clustering model uses K-Prototypes algorithm to analyze your household energy profile and group you with similar users. The model analyzes the following factors:</p>
                             <ul class="list-group list-group-flush mb-4">
-                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;"><i class="fas fa-globe text-info"></i> Country</li>
-                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;"><i class="fas fa-solar-panel text-info"></i> Energy Source</li>
-                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;"><i class="fas fa-bolt text-info"></i> Monthly Energy Usage (kWh)</li>
-                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;"><i class="fas fa-calendar-alt text-info"></i> Year of Data</li>
-                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;"><i class="fas fa-home text-info"></i> Household Size</li>
-                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;"><i class="fas fa-money-bill-wave text-info"></i> Income Level</li>
-                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;"><i class="fas fa-city text-info"></i> Urban/Rural Location</li>
-                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;"><i class="fas fa-clock text-info"></i> Energy Adoption Year</li>
-                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;"><i class="fas fa-hand-holding-usd text-info"></i> Subsidy Status</li>
-                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;"><i class="fas fa-piggy-bank text-info"></i> Cost Savings (USD)</li>
+                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;" data-aos="fade-left" data-aos-delay="100"><i class="fas fa-globe text-info"></i> Country</li>
+                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;" data-aos="fade-left" data-aos-delay="150"><i class="fas fa-solar-panel text-info"></i> Energy Source</li>
+                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;" data-aos="fade-left" data-aos-delay="200"><i class="fas fa-bolt text-info"></i> Monthly Energy Usage (kWh)</li>
+                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;" data-aos="fade-left" data-aos-delay="250"><i class="fas fa-calendar-alt text-info"></i> Year of Data</li>
+                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;" data-aos="fade-left" data-aos-delay="300"><i class="fas fa-home text-info"></i> Household Size</li>
+                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;" data-aos="fade-left" data-aos-delay="350"><i class="fas fa-money-bill-wave text-info"></i> Income Level</li>
+                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;" data-aos="fade-left" data-aos-delay="400"><i class="fas fa-city text-info"></i> Urban/Rural Location</li>
+                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;" data-aos="fade-left" data-aos-delay="450"><i class="fas fa-clock text-info"></i> Energy Adoption Year</li>
+                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;" data-aos="fade-left" data-aos-delay="500"><i class="fas fa-hand-holding-usd text-info"></i> Subsidy Status</li>
+                                <li class="list-group-item" style="background: transparent; border-left: 4px solid #17a2b8;" data-aos="fade-left" data-aos-delay="550"><i class="fas fa-piggy-bank text-info"></i> Cost Savings (USD)</li>
                             </ul>
-                            <div class="d-grid gap-2">
+                            <div class="d-grid gap-2" data-aos="zoom-in" data-aos-delay="600">
                                 <a href="/analyzer" class="btn btn-info text-white" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">Analyze Your Profile</a>
                             </div>
                         </div>
-                        <div class="col-md-6 text-center d-flex flex-column justify-content-center">
+                        <div class="col-md-6 text-center d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="200">
                             <img src="{{ url_for('static', filename='images/SF_decarb_challenges_thumb1.png') }}" alt="Energy User Groups Illustration" class="img-fluid mb-4" style="max-height: 300px; border-radius: 10px; box-shadow: 0 6px 12px rgba(0,0,0,0.1);">
-                            <div class="alert alert-info" style="border-left: 5px solid #17a2b8; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+                            <div class="alert alert-info" style="border-left: 5px solid #17a2b8; box-shadow: 0 4px 8px rgba(0,0,0,0.05);" data-aos="fade-up" data-aos-delay="300">
                                 <h4 class="text-info">User Groups</h4>
                                 <p class="mb-0">Our model identifies <strong>10 distinct energy user groups</strong>, each with unique characteristics.</p>
                             </div>
-                            <a href="/notebook-view" class="btn btn-outline-info mt-3" style="box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+                            <a href="/notebook-view" class="btn btn-outline-info mt-3" style="box-shadow: 0 4px 8px rgba(0,0,0,0.05);" data-aos="zoom-in" data-aos-delay="400">
                                 <i class="fas fa-book"></i> View Model Details
                             </a>
                         </div>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="row mb-5">
-        <div class="col-md-10 mx-auto">
+        <div class="col-md-10 mx-auto" data-aos="fade-up">
             <div class="card shadow">
                 <div class="card-header bg-warning text-white">
                     <h3 class="mb-0">The 10 Energy User Groups</h3>
@@ -64,23 +64,23 @@
                     <div class="row">
                         <div class="col-md-6">
                             <ul class="list-group mb-4">
-                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;">
+                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;" data-aos="fade-right" data-aos-delay="100">
                                     <span class="badge bg-warning text-dark me-2">1</span>
                                     <strong>Heavy Users in Underserved Areas</strong>: High consumption with limited infrastructure access
                                 </li>
-                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;">
+                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;" data-aos="fade-right" data-aos-delay="200">
                                     <span class="badge bg-warning text-dark me-2">2</span>
                                     <strong>High Impact Rural Households</strong>: Rural settings with significant potential for improvement
                                 </li>
-                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;">
+                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;" data-aos="fade-right" data-aos-delay="300">
                                     <span class="badge bg-warning text-dark me-2">3</span>
                                     <strong>Minimal Users with Strong Means</strong>: Low usage paired with high financial capacity
                                 </li>
-                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;">
+                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;" data-aos="fade-right" data-aos-delay="400">
                                     <span class="badge bg-warning text-dark me-2">4</span>
                                     <strong>Urban Subsidized Adopters</strong>: City dwellers taking advantage of government programs
                                 </li>
-                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;">
+                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;" data-aos="fade-right" data-aos-delay="500">
                                     <span class="badge bg-warning text-dark me-2">5</span>
                                     <strong>Budget-Conscious Urban Beneficiaries</strong>: Cost-sensitive urban households
                                 </li>
@@ -88,23 +88,23 @@
                         </div>
                         <div class="col-md-6">
                             <ul class="list-group mb-4">
-                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;">
+                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;" data-aos="fade-left" data-aos-delay="100">
                                     <span class="badge bg-warning text-dark me-2">6</span>
                                     <strong>Efficient Urban Savers</strong>: City residents with optimized energy efficiency
                                 </li>
-                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;">
+                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;" data-aos="fade-left" data-aos-delay="200">
                                     <span class="badge bg-warning text-dark me-2">7</span>
                                     <strong>High Consumers with Low Returns</strong>: Households using significant energy with poor outcomes
                                 </li>
-                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;">
+                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;" data-aos="fade-left" data-aos-delay="300">
                                     <span class="badge bg-warning text-dark me-2">8</span>
                                     <strong>Frugal Households with High Gains</strong>: Modest means achieving excellent results
                                 </li>
-                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;">
+                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;" data-aos="fade-left" data-aos-delay="400">
                                     <span class="badge bg-warning text-dark me-2">9</span>
                                     <strong>Urban Energy Spenders</strong>: City households with above-average consumption
                                 </li>
-                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;">
+                                <li class="list-group-item" style="margin-bottom: 8px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #ffc107;" data-aos="fade-left" data-aos-delay="500">
                                     <span class="badge bg-warning text-dark me-2">10</span>
                                     <strong>Wealthy Subsidized Consumers</strong>: High-income households benefiting from incentives
                                 </li>
@@ -117,28 +117,28 @@
     </div>
 
     <div class="row mb-5">
-        <div class="col-md-10 mx-auto">
+        <div class="col-md-10 mx-auto" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
             <div class="card shadow">
                 <div class="card-header bg-success text-white">
                     <h3 class="mb-0">How It Works</h3>
                 </div>
                 <div class="card-body" style="background: linear-gradient(to right, #f6f9ff, #f1f8ff, #e7f7ff);">
                     <div class="row text-center">
-                        <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="200">
                             <div class="rounded-circle bg-info d-inline-flex justify-content-center align-items-center mb-3" style="width: 80px; height: 80px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                                 <i class="fas fa-clipboard-list fa-2x text-white"></i>
                             </div>
                             <h4 class="text-info">1. Enter Your Data</h4>
                             <p>Provide information about your household energy usage and characteristics</p>
                         </div>
-                        <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="col-md-4 mb-4 mb-md-0" data-aos="zoom-in" data-aos-delay="400">
                             <div class="rounded-circle bg-success d-inline-flex justify-content-center align-items-center mb-3" style="width: 80px; height: 80px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                                 <i class="fas fa-brain fa-2x text-white"></i>
                             </div>
                             <h4 class="text-success">2. Analysis</h4>
                             <p>Our K-Prototypes clustering model analyzes your data to find your energy user group</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-left" data-aos-delay="600">
                             <div class="rounded-circle bg-warning d-inline-flex justify-content-center align-items-center mb-3" style="width: 80px; height: 80px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                                 <i class="fas fa-lightbulb fa-2x text-white"></i>
                             </div>
